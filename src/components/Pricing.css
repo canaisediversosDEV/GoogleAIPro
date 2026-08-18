@@ -38,29 +38,29 @@
 .price__card {
   display: flex;
   flex-direction: column;
-  padding: 32px;
-  background: rgba(255, 255, 255, 0.7);
+  padding: 36px 32px;
+  background: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
-  border: 1px solid rgba(255, 255, 255, 0.6);
-  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  border-radius: 24px;
   text-align: left !important;
   position: relative;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.03), 0 1px 3px rgba(0,0,0,0.02);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.06), 0 2px 6px rgba(0,0,0,0.04);
   transition: transform var(--ease), box-shadow var(--ease);
 }
 
 .price__card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.06), 0 1px 3px rgba(0,0,0,0.03);
+  transform: translateY(-6px);
+  box-shadow: 0 24px 48px rgba(0,0,0,0.1), 0 4px 12px rgba(0,0,0,0.05);
 }
 
 .price__card--hot {
-  border: 1px solid rgba(26, 115, 232, 0.5);
-  box-shadow: 0 10px 40px rgba(26, 115, 232, 0.15), inset 0 0 0 1px rgba(26, 115, 232, 0.2);
+  border: 2px solid rgba(26, 115, 232, 0.6);
+  box-shadow: 0 20px 50px rgba(26, 115, 232, 0.15), inset 0 0 0 1px rgba(26, 115, 232, 0.05);
 }
 .price__card--hot:hover {
-  box-shadow: 0 20px 50px rgba(26, 115, 232, 0.2), inset 0 0 0 1px rgba(26, 115, 232, 0.3);
+  box-shadow: 0 30px 60px rgba(26, 115, 232, 0.25), inset 0 0 0 1px rgba(26, 115, 232, 0.1);
 }
 
 /* Badge (Top Right) */
@@ -78,10 +78,23 @@
 }
 
 .price__period {
-  font-size: 18px;
+  display: inline-flex;
+  align-items: center;
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 100px;
+  padding: 6px 14px;
+  font-size: 14px;
   font-weight: 700;
   color: var(--text);
-  margin-bottom: 16px;
+  margin-bottom: 24px;
+  width: fit-content;
+}
+
+.price__card--hot .price__period {
+  background: rgba(26, 115, 232, 0.1);
+  border-color: rgba(26, 115, 232, 0.2);
+  color: var(--blue);
 }
 
 .price__amount {
@@ -114,6 +127,7 @@
 
 .price__desc {
   font-size: 15px;
+  font-weight: 500;
   color: var(--muted);
   margin-bottom: 28px;
   line-height: 1.5;
