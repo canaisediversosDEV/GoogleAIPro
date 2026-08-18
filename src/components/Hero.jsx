@@ -20,18 +20,20 @@ export default function Hero() {
           Pare de pagar assinaturas isoladas. Tenha armazenamento em nuvem e acesso avançado ao Gemini em um só lugar.
         </p>
 
-        {/* Pricing pills inline */}
-        <div className="hero__pills">
-          <a href="#pricing" className="hero__pill" id="hero-pill-6m">
-            <span className="hero__pill-price">R$ 19,90</span>
-            <span className="hero__pill-label">6 meses</span>
-          </a>
-
-          <a href="#pricing" className="hero__pill hero__pill--hot" id="hero-pill-18m">
-            <span className="hero__pill-badge">Recomendado</span>
-            <span className="hero__pill-price">R$ 29,90</span>
-            <span className="hero__pill-label">18 meses</span>
-          </a>
+        {/* ────────────────────────────────────────────────
+            PLACEHOLDER DO VÍDEO
+        ──────────────────────────────────────────────── */}
+        <div className="hero__video-wrapper">
+          {/* PLACEHOLDER — remover após adicionar o vídeo real (iframe do YouTube ou <video> local) */}
+          <div className="hero__video-ph">
+            <div className="hero__video-play">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="white">
+                <path d="M8 5v14l11-7z"/>
+              </svg>
+            </div>
+            <p className="hero__video-ph-text">Demonstração do produto</p>
+            <p className="hero__video-ph-hint">Adicione o vídeo em <code>Hero.jsx</code></p>
+          </div>
         </div>
 
         <a

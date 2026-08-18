@@ -1,5 +1,4 @@
 import Hero from './components/Hero'
-import VideoSection from './components/VideoSection'
 import Features from './components/Features'
 import Pricing from './components/Pricing'
 import StickyMobileCTA from './components/StickyMobileCTA'
@@ -10,7 +9,6 @@ export default function App() {
     <>
       <main id="main-content">
         <Hero />
-        <VideoSection />
         <Features />
         <Pricing />
       </main>

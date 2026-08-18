@@ -4,6 +4,11 @@
   text-align: center;
   position: relative;
   background-color: var(--bg2);
+  background-image: 
+    radial-gradient(at 100% 100%, rgba(26, 115, 232, 0.08) 0px, transparent 60%),
+    radial-gradient(at 0% 100%, rgba(162, 89, 255, 0.05) 0px, transparent 60%);
+  background-size: cover;
+  background-position: center;
 }
 
 .price__h2 {
@@ -34,21 +39,28 @@
   display: flex;
   flex-direction: column;
   padding: 32px;
-  background: var(--bg);
-  border: 1px solid var(--border);
-  border-radius: 16px;
-  text-align: left;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 20px;
+  text-align: left !important;
   position: relative;
-  box-shadow: 0 1px 2px 0 rgba(60,64,67,0.3), 0 1px 3px 1px rgba(60,64,67,0.15);
-  transition: box-shadow var(--ease);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.03), 0 1px 3px rgba(0,0,0,0.02);
+  transition: transform var(--ease), box-shadow var(--ease);
 }
 
 .price__card:hover {
-  box-shadow: 0 1px 3px 0 rgba(60,64,67,0.3), 0 4px 8px 3px rgba(60,64,67,0.15);
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.06), 0 1px 3px rgba(0,0,0,0.03);
 }
 
 .price__card--hot {
-  border: 2px solid var(--blue);
+  border: 1px solid rgba(26, 115, 232, 0.5);
+  box-shadow: 0 10px 40px rgba(26, 115, 232, 0.15), inset 0 0 0 1px rgba(26, 115, 232, 0.2);
+}
+.price__card--hot:hover {
+  box-shadow: 0 20px 50px rgba(26, 115, 232, 0.2), inset 0 0 0 1px rgba(26, 115, 232, 0.3);
 }
 
 /* Badge (Top Right) */
@@ -101,10 +113,13 @@
 }
 
 .price__desc {
-  font-size: 14px;
+  font-size: 15px;
   color: var(--muted);
-  margin-bottom: 24px;
+  margin-bottom: 28px;
   line-height: 1.5;
+  text-align: left !important;
+  letter-spacing: normal !important;
+  word-spacing: normal !important;
 }
 
 /* ── Benefits List ── */
