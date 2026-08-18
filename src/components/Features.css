@@ -35,16 +35,18 @@
   align-items: center;
   gap: 10px;
   padding: 22px 16px;
-  background: rgba(255,255,255,.03);
+  background: var(--bg);
   border: 1px solid var(--border);
   border-radius: var(--r-lg);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
   transition: all var(--ease);
   cursor: default;
 }
 .feat__card:hover {
-  background: rgba(79,142,247,.07);
-  border-color: rgba(79,142,247,.3);
+  background: var(--bg2);
+  border-color: var(--blue);
   transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.08);
 }
 
 .feat__icon { font-size: 28px; }
@@ -52,7 +54,7 @@
 .feat__name {
   font-size: 13px;
   font-weight: 600;
-  color: #fff;
+  color: var(--text);
   text-align: center;
 }
 
