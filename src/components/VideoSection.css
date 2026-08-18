@@ -1,5 +1,5 @@
 /* ── Video Section ── */
-.video-section {
+.vid {
   padding: 40px 0 60px;
   background: var(--bg2);
   text-align: center;
@@ -26,13 +26,14 @@
 }
 
 /* Frame */
-.video__wrapper {
+.vid__frame {
   position: relative;
   max-width: 800px;
-  margin: 0 auto;
+  margin: 0 auto 36px;
   border-radius: 16px;
   background: #000;
   overflow: hidden;
+  aspect-ratio: 16/9;
   border: 1px solid var(--border);
   box-shadow: 0 4px 12px rgba(60,64,67,0.15);
   transition: transform var(--ease);

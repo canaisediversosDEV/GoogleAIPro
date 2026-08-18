@@ -4,8 +4,6 @@ import { CHECKOUT, handleCheckout } from '../utils/tracking'
 export default function Hero() {
   return (
     <section className="hero">
-      <div className="hero__orb hero__orb--a" />
-      <div className="hero__orb hero__orb--b" />
 
       <div className="c hero__body">
 
