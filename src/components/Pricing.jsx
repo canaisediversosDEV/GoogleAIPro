@@ -10,19 +10,19 @@ function Benefits() {
     <ul className="price__benefits">
       <li className="price__benefit">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-        <strong>5 TB</strong> de armazenamento total no Gmail, Fotos e Drive
+        <span><strong>5 TB</strong> de armazenamento total no Gmail, Fotos e Drive</span>
       </li>
       <li className="price__benefit">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-        Acesso ao <strong>Gemini 3 Pro</strong> Premium
+        <span>Acesso ao <strong>Gemini 3 Pro</strong> Premium</span>
       </li>
       <li className="price__benefit">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-        Criação de <strong>Imagens e Vídeos</strong>
+        <span>Criação de <strong>Imagens e Vídeos</strong></span>
       </li>
       <li className="price__benefit">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-        IA no Gmail, Docs e Planilhas
+        <span>IA no Gmail, Docs e Planilhas</span>
       </li>
     </ul>
   )
