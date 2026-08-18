@@ -17,18 +17,19 @@
 }
 
 .upsell-modal {
-  background: var(--bg2);
-  border: 1px solid rgba(79, 142, 247, 0.3);
-  border-radius: 24px;
-  width: 100%;
-  max-width: 440px;
-  padding: 32px 24px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  width: 90%;
+  max-width: 400px;
+  padding: 32px;
   text-align: center;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5), 0 0 80px rgba(79, 142, 247, 0.15);
-  animation: slide-up 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+  animation: modal-up 0.4s var(--ease) forwards;
 }
 
-@keyframes slide-up {
+@keyframes modal-up {
   from { opacity: 0; transform: translateY(20px) scale(0.95); }
   to { opacity: 1; transform: translateY(0) scale(1); }
 }
@@ -48,25 +49,23 @@
 
 .upsell__title {
   font-size: 28px;
-  font-weight: 900;
-  line-height: 1.2;
+  color: var(--text);
   margin-bottom: 12px;
-  letter-spacing: -0.5px;
+  line-height: 1.2;
 }
 
 .upsell__desc {
   font-size: 15px;
-  color: var(--soft);
-  line-height: 1.5;
+  color: var(--muted);
   margin-bottom: 24px;
 }
 
 .upsell__price {
-  background: rgba(255, 255, 255, 0.03);
-  border-radius: 16px;
-  padding: 16px;
-  margin-bottom: 24px;
+  background: var(--bg2);
   border: 1px solid var(--border);
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 24px;
 }
 
 .upsell__price-old {
@@ -77,9 +76,9 @@
 }
 
 .upsell__price-new {
-  font-size: 36px;
-  font-weight: 900;
-  color: #fff;
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--text);
 }
 
 .upsell__actions {
@@ -90,31 +89,30 @@
 
 .upsell__accept {
   width: 100%;
-  padding: 18px;
+  padding: 16px;
+  border-radius: 100px;
+  background: var(--primary);
+  color: white;
+  font-weight: 700;
   font-size: 16px;
-  background: #22c55e;
-  box-shadow: 0 4px 20px rgba(34, 197, 94, 0.3);
-  color: #fff;
-  animation: pulse-green 2s infinite;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 12px;
+  transition: background 0.2s;
 }
+
 .upsell__accept:hover {
-  background: #16a34a;
-  box-shadow: 0 6px 28px rgba(34, 197, 94, 0.4);
+  background: #1557b0;
 }
 
 .upsell__decline {
-  width: 100%;
   background: transparent;
+  border: none;
   color: var(--muted);
   font-size: 13px;
-  text-decoration: underline;
-  border: none;
-  padding: 12px;
+  font-weight: 500;
   cursor: pointer;
-  transition: color var(--ease);
-}
-.upsell__decline:hover {
-  color: #fff;
+  text-decoration: underline;
 }
 
 @media (max-width: 480px) {

@@ -1,74 +1,54 @@
-/* ── Pricing ── */
+/* ── Pricing Section ── */
 .price {
-  padding: 80px 0 100px;
-  background: var(--bg2);
-  position: relative;
-  overflow: hidden;
+  padding: 80px 0;
   text-align: center;
-}
-
-.price__glow {
-  position: absolute;
-  width: 700px;
-  height: 700px;
-  border-radius: 50%;
-  filter: blur(150px);
-  background: rgba(79,142,247,.12);
-  top: -300px;
-  left: 50%;
-  transform: translateX(-50%);
-  pointer-events: none;
+  position: relative;
+  background-color: var(--bg2);
 }
 
 .price__h2 {
-  font-size: clamp(28px, 4.5vw, 56px);
-  font-weight: 900;
-  letter-spacing: -1.5px;
-  margin-bottom: 10px;
+  font-size: 40px;
+  margin-bottom: 12px;
+  color: var(--text);
+  letter-spacing: -0.02em;
 }
 
 .price__sub {
-  font-size: 16px;
-  color: var(--soft);
+  font-size: 18px;
+  color: var(--muted);
   margin-bottom: 48px;
 }
 
-/* Grid — destaque na coluna do meio em desktop */
+/* Grid */
 .price__grid {
   display: grid;
-  grid-template-columns: 1fr 1.1fr;
-  gap: 14px;
-  align-items: center;
-  max-width: 700px;
-  margin: 0 auto 24px;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  align-items: stretch;
+  max-width: 800px;
+  margin: 0 auto 32px;
 }
 
 /* Card base */
 .price__card {
   display: flex;
   flex-direction: column;
-  padding: 24px;
-  background: linear-gradient(to bottom, #18181b, #101118, #09090b);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 20px;
-  text-align: center;
-  transition: transform var(--ease);
-}
-.price__card:hover {
-  transform: translateY(-2px);
+  padding: 32px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  text-align: left;
+  position: relative;
+  box-shadow: 0 1px 2px 0 rgba(60,64,67,0.3), 0 1px 3px 1px rgba(60,64,67,0.15);
+  transition: box-shadow var(--ease);
 }
 
-/* Hot card */
-.price__card--hot {
-  border: 2px solid rgba(245, 158, 11, 0.6);
-  box-shadow: 0 0 30px rgba(245, 158, 11, 0.15);
-  position: relative;
-  overflow: hidden;
-  padding: 24px;
+.price__card:hover {
+  box-shadow: 0 1px 3px 0 rgba(60,64,67,0.3), 0 4px 8px 3px rgba(60,64,67,0.15);
 }
-.price__card--hot:hover {
-  box-shadow: 0 0 40px rgba(245, 158, 11, 0.25);
-  transform: translateY(-4px);
+
+.price__card--hot {
+  border: 2px solid var(--blue);
 }
 
 /* Badge (Top Right) */
@@ -76,154 +56,120 @@
   position: absolute;
   top: 0;
   right: 0;
-  background: #d97706; /* amber-600 */
+  background: var(--blue);
   color: white;
-  font-size: 10px;
-  font-weight: 900;
-  padding: 6px 14px;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 6px 16px;
   border-bottom-left-radius: 12px;
-  text-transform: uppercase;
+  border-top-right-radius: 14px;
 }
 
 .price__period {
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
-  background: rgba(255, 255, 255, 0.05);
-  color: #d4d4d8;
-  font-size: 10px;
-  font-weight: 800;
-  padding: 4px 12px;
-  border-radius: 100px;
-  text-transform: uppercase;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text);
   margin-bottom: 16px;
-  width: fit-content;
-  margin-left: auto;
-  margin-right: auto;
 }
 
-/* Pricing Block */
-.price__pricing-block {
-  margin-bottom: 16px;
+.price__amount {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+  margin-bottom: 12px;
 }
 
 .price__old {
-  display: block;
-  font-size: 14px;
-  font-weight: 700;
+  font-size: 16px;
   color: var(--muted);
   text-decoration: line-through;
-  margin-bottom: 4px;
+  margin-right: 8px;
+}
+
+.price__currency {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text);
 }
 
 .price__num {
-  font-size: 32px;
-  font-weight: 400;
-  color: #fff;
+  font-size: 48px;
+  font-weight: 800;
+  color: var(--text);
   line-height: 1;
-  margin-bottom: 6px;
-}
-.price__num strong { 
-  font-size: 40px; 
-  font-weight: 900; 
-  color: #93c5fd; 
-}
-.price__num--big strong { 
-  font-size: 48px; 
+  letter-spacing: -0.02em;
 }
 
-.price__micro-tag {
-  font-size: 10px;
-  font-weight: 800;
+.price__desc {
+  font-size: 14px;
   color: var(--muted);
-  text-transform: uppercase;
+  margin-bottom: 24px;
+  line-height: 1.5;
 }
 
 /* ── Benefits List ── */
 .price__benefits {
   list-style: none;
-  margin: 0 0 20px 0;
+  margin: 0 0 32px 0;
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  background: rgba(0, 0, 0, 0.3);
-  padding: 16px;
-  border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  gap: 16px;
   text-align: left;
 }
 
 .price__benefit {
-  font-size: 13px;
-  color: #e4e4e7;
+  font-size: 15px;
+  color: var(--text);
   display: flex;
   align-items: flex-start;
-  gap: 8px;
+  gap: 12px;
   line-height: 1.4;
 }
 
 .price__benefit svg {
-  color: #34d399; /* emerald-400 */
+  color: var(--green); /* Google Green */
   flex-shrink: 0;
   margin-top: 2px;
 }
 
-.price__card--hot .price__benefit svg {
-  color: #f59e0b; /* amber-500 animate-flame equivalent */
-}
-
-/* Button */
+/* Botões específicos de pricing */
 .btn-price {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 100%;
-  padding: 14px;
-  border-radius: 12px;
-  font-size: 14px;
-  font-weight: 900;
-  border: none;
-  cursor: pointer;
-  background: linear-gradient(to right, #f59e0b, #d97706);
-  color: #3b2a00;
-  box-shadow: 0 4px 15px rgba(245, 158, 11, 0.3);
-  transition: transform 0.2s, box-shadow 0.2s;
-  text-transform: uppercase;
-}
-.btn-price:hover {
-  transform: scale(1.02);
-  box-shadow: 0 6px 20px rgba(245, 158, 11, 0.4);
-}
-.btn-price:active {
-  transform: scale(0.98);
+  margin-top: auto;
+  background: white;
+  color: var(--primary);
+  border: 1px solid var(--border);
 }
 
-/* ── MOBILE ── */
+.btn-price:hover {
+  background: rgba(26, 115, 232, 0.04);
+}
+
+.btn-price--hot {
+  background: var(--primary);
+  color: white;
+  border: none;
+}
+
+.btn-price--hot:hover {
+  background: #1557b0;
+}
+
+/* Mobile Adjustments */
 @media (max-width: 720px) {
   .price {
-    padding: 60px 0 80px;
-  }
-
-  .price__h2 {
-    font-size: clamp(26px, 8vw, 40px);
-  }
-
-  .price__sub {
-    font-size: 14px;
-    margin-bottom: 32px;
+    padding: 60px 0;
   }
 
   .price__grid {
     grid-template-columns: 1fr;
     max-width: 400px;
-    margin-left: auto;
-    margin-right: auto;
+    gap: 16px;
   }
 
-  .price__num--big strong { font-size: 44px; }
-  .price__num strong { font-size: 36px; }
-
+  .price__h2 {
+    font-size: 32px;
+  }
   .price__card { padding: 22px 20px; }
   .price__card--hot { padding: 26px 22px; }
 }

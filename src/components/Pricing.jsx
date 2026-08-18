@@ -50,9 +50,6 @@ export default function Pricing() {
 
   return (
     <section className="price" id="pricing">
-      {/* Background glow */}
-      <div className="price__glow" aria-hidden="true" />
-
       <div className="c">
         <h2 className="price__h2">Escolha seu acesso.</h2>
         <p className="price__sub">Você escolhe quanto quer pagar.</p>
@@ -61,44 +58,48 @@ export default function Pricing() {
 
           {/* 6 MESES — LINHA DE FRENTE */}
           <div className="price__card" id="card-6m">
-            <span className="price__period">BÁSICO</span>
-            <div className="price__pricing-block">
-              <span className="price__old">De R$ 97,00</span>
-              <div className="price__num">
-                R$ <strong>19,90</strong>
-              </div>
-              <span className="price__micro-tag">PAGAMENTO ÚNICO</span>
+            <div className="price__period">
+              <span>Plano Básico (6 Meses)</span>
             </div>
+            <div className="price__amount">
+              <span className="price__old">R$ 97,00</span>
+              <span className="price__currency">R$</span>
+              <span className="price__num">19,90</span>
+            </div>
+            <p className="price__desc">Ideal para quem quer experimentar o ecossistema com pagamento único acessível.</p>
+
             <Benefits />
+            
             <button
               className="btn btn-price"
               id="price-btn-6m"
               onClick={handleSixMonthsClick}
             >
-              🚀 ESCOLHER R$ 19,90
+              ESCOLHER R$ 19,90
             </button>
           </div>
 
           {/* 18 MESES — MAIS VENDIDO / RECOMENDADO */}
-          <div className="price__card price__card--hot" id="card-18m">
-            <span className="price__badge">RECOMENDADO</span>
-            <span className="price__period" style={{color:'#93c5fd', borderColor: 'rgba(147, 197, 253, 0.3)'}}>PREMIUM</span>
-            
-            <div className="price__pricing-block">
-              <span className="price__old">De R$ 197,00</span>
-              <div className="price__num price__num--big">
-                R$ <strong>29,90</strong>
-              </div>
-              <span className="price__micro-tag">PAGAMENTO ÚNICO</span>
+          <div className="price__card price__card--hot">
+            <span className="price__badge">Selo Google AI Pro</span>
+            <div className="price__period">
+              <span>Plano Premium (18 Meses)</span>
             </div>
+            <div className="price__amount">
+              <span className="price__old">R$ 197,00</span>
+              <span className="price__currency">R$</span>
+              <span className="price__num">29,90</span>
+            </div>
+            <p className="price__desc">Maior custo-benefício. Acesso estendido aos apps da nuvem do Google com todas as atualizações.</p>
 
             <Benefits />
+            
             <button
               className="btn btn-price btn-price--hot"
               id="price-btn-18m"
               onClick={(e) => { e.preventDefault(); handleCheckout(CHECKOUT.eighteen, '18-meses') }}
             >
-              🚀 ESCOLHER R$ 29,90
+              ESCOLHER R$ 29,90
             </button>
           </div>
 

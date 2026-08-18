@@ -15,11 +15,11 @@ export default function Hero() {
         </div>
 
         <h1 className="hero__h1">
-          Pare de abrir <span className="gradient-text">dez ferramentas</span> para fazer uma coisa.
+          Acesse um <span className="text-gradient">ecossistema</span> oficial de inteligência artificial.
         </h1>
 
         <p className="hero__sub">
-          Um ecossistema de IA do Google. Texto, imagem, vídeo, pesquisa, código e muito mais — tudo em um só lugar.
+          Pare de pagar assinaturas isoladas. Tenha armazenamento em nuvem e acesso avançado ao Gemini em um só lugar.
         </p>
 
         {/* Pricing pills inline */}
@@ -30,7 +30,7 @@ export default function Hero() {
           </a>
 
           <a href="#pricing" className="hero__pill hero__pill--hot" id="hero-pill-18m">
-            <span className="hero__pill-badge">🔥 MAIS RECOMENDADO</span>
+            <span className="hero__pill-badge">Recomendado</span>
             <span className="hero__pill-price">R$ 29,90</span>
             <span className="hero__pill-label">18 meses</span>
           </a>

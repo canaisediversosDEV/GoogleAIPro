@@ -24,11 +24,11 @@
 }
 
 .faq__item {
-  border-bottom: 1px solid rgba(255,255,255,0.08);
+  border-bottom: 1px solid var(--border);
 }
 
 .faq__item:first-child {
-  border-top: 1px solid rgba(255,255,255,0.08);
+  border-top: 1px solid var(--border);
 }
 
 .faq__question {
@@ -115,8 +115,8 @@
   flex-direction: column;
   align-items: center;
   gap: 4px;
-  background: rgba(255,255,255,0.05);
-  border: 1px solid rgba(255,255,255,0.12);
+  background: var(--bg);
+  border: 1px solid var(--border);
   border-radius: var(--radius-md);
   padding: 16px 24px;
   cursor: pointer;
@@ -127,7 +127,7 @@
 }
 
 .faq__option:hover {
-  background: rgba(255,255,255,0.1);
+  background: var(--bg2);
   border-color: rgba(79,142,247,0.4);
   transform: translateY(-2px);
 }
