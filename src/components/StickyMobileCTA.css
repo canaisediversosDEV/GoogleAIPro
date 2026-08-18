@@ -1,0 +1,45 @@
+/* ── Sticky Mobile CTA ── */
+.scta {
+  display: none;
+  position: fixed;
+  bottom: 0; left: 0; right: 0;
+  z-index: 999;
+  background: rgba(9,14,24,.95);
+  border-top: 1px solid rgba(79,142,247,.2);
+  backdrop-filter: blur(16px);
+  padding: 12px 20px;
+  transform: translateY(100%);
+  transition: transform .3s cubic-bezier(.4,0,.2,1);
+}
+.scta--on { transform: translateY(0); }
+
+.scta__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.scta__title {
+  font-size: 13px;
+  font-weight: 800;
+  color: #fff;
+}
+.scta__sub {
+  font-size: 11px;
+  color: var(--muted);
+  margin-top: 1px;
+}
+
+.scta__btn {
+  flex-shrink: 0;
+  padding: 11px 20px !important;
+  font-size: 13px !important;
+  border-radius: 10px !important;
+}
+
+@media (max-width: 768px) {
+  .scta { display: block; }
+}

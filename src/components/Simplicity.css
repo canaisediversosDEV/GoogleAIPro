@@ -1,0 +1,117 @@
+/* =====================================================
+   SIMPLICITY
+   ===================================================== */
+
+.simplicity {
+  background: var(--dark-900);
+}
+
+.simplicity__headline {
+  font-size: clamp(36px, 5vw, 64px);
+  font-weight: 900;
+  letter-spacing: -1.5px;
+  color: white;
+  margin-bottom: 16px;
+}
+
+.simplicity__sub {
+  font-size: clamp(16px, 2vw, 18px);
+  color: var(--text-secondary-dark);
+  max-width: 520px;
+  line-height: 1.7;
+  margin-bottom: 48px;
+}
+
+/* Steps */
+.simplicity__steps {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  max-width: 640px;
+  margin-bottom: 48px;
+}
+
+.simplicity__step {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+/* Bubbles */
+.simplicity__bubble {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 16px 20px;
+  border-radius: var(--radius-md);
+}
+
+.simplicity__bubble--user {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  align-self: flex-start;
+  max-width: 90%;
+}
+
+.simplicity__bubble--ai {
+  background: rgba(79, 142, 247, 0.08);
+  border: 1px solid rgba(79, 142, 247, 0.2);
+  align-self: flex-end;
+  max-width: 90%;
+}
+
+.simplicity__bubble-label {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--text-muted-dark);
+}
+
+.simplicity__bubble--ai .simplicity__bubble-label {
+  color: var(--blue-400);
+}
+
+.simplicity__bubble-text {
+  font-size: 15px;
+  color: white;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+/* Arrows */
+.simplicity__arrow {
+  font-size: 20px;
+  color: var(--blue-400);
+  text-align: center;
+  padding: 6px 0;
+  opacity: 0.6;
+}
+
+.simplicity__step-arrow {
+  font-size: 24px;
+  color: var(--text-muted-dark);
+  text-align: center;
+  padding: 12px 0;
+}
+
+/* Note */
+.simplicity__note {
+  border-left: 3px solid var(--blue-500);
+  padding-left: 20px;
+  max-width: 540px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.simplicity__note p {
+  font-size: 16px;
+  color: var(--text-secondary-dark);
+  line-height: 1.6;
+}
+
+.simplicity__note-small {
+  font-size: 13px !important;
+  color: var(--text-muted-dark) !important;
+}
