@@ -31,6 +31,7 @@ export default function UpsellModal({ type, onAccept, onDecline }) {
   return (
     <div className="upsell-overlay">
       <div className="upsell-modal">
+        <button className="upsell__close" onClick={onDecline} aria-label="Fechar">&times;</button>
         <span className="upsell__badge">{data.badge}</span>
         <h3 className="upsell__title">{data.title}</h3>
         <p className="upsell__desc">{data.desc}</p>
