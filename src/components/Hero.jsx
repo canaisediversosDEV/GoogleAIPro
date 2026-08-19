@@ -13,7 +13,7 @@ export default function Hero() {
         </div>
 
         <h1 className="hero__h1">
-          Acesse um <span className="text-gradient">ecossistema</span> oficial de inteligência artificial.
+          GOOGLE IA PRO <span className="text-gradient">18 MESES</span> NO SEU EMAIL
         </h1>
 
         <p className="hero__sub">
