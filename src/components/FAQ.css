@@ -1,7 +1,7 @@
 /* ── FAQ ── */
 .faq {
   padding: 80px 0;
-  background: var(--bg);
+  background: var(--bg2);
 }
 
 .faq__eyebrow {
@@ -22,19 +22,26 @@
   margin-bottom: 36px;
 }
 
-/* Lista */
+/* Lista centralizada */
 .faq__list {
-  max-width: 700px;
+  max-width: 680px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
+  gap: 10px;
 }
 
-.faq__item {
-  border-bottom: 1px solid var(--border);
+/* Card escuro — estilo da referência */
+.faq__card {
+  background: rgba(24, 27, 32, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 14px;
+  overflow: hidden;
+  transition: border-color var(--ease);
 }
 
-.faq__item:first-child {
-  border-top: 1px solid var(--border);
+.faq__card:hover {
+  border-color: rgba(255, 255, 255, 0.2);
 }
 
 /* Botão pergunta */
@@ -43,46 +50,52 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 16px;
-  padding: 20px 0;
+  gap: 12px;
+  padding: 16px 18px;
+  min-height: 52px;
   background: none;
   border: none;
-  color: var(--text);
+  color: #ffffff;
   font-family: var(--font);
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 14px;
+  font-weight: 700;
   cursor: pointer;
   text-align: left;
-  transition: color var(--ease);
+  line-height: 1.4;
 }
 
-.faq__question:hover {
-  color: var(--blue);
-}
-
-.faq__chevron {
-  font-size: 22px;
-  font-weight: 300;
-  color: var(--blue);
+/* Chevron SVG animado */
+.faq__chevron-svg {
+  color: #f59e0b;
   flex-shrink: 0;
+  transition: transform 0.25s ease;
+  transform: rotate(0deg);
+}
+
+.faq__chevron-svg--open {
+  transform: rotate(180deg);
 }
 
 /* Resposta */
 .faq__answer {
-  padding-bottom: 20px;
+  padding: 4px 18px 18px;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  background: rgba(0, 0, 0, 0.2);
 }
 
 .faq__answer p {
-  font-size: 15px;
-  color: var(--muted);
-  line-height: 1.7;
+  font-size: 13px;
+  color: #a1a1aa;
+  line-height: 1.75;
 }
 
 /* Responsive */
 @media (max-width: 600px) {
   .faq { padding: 60px 0; }
-  .faq__question { font-size: 15px; }
+  .faq__question { font-size: 13px; padding: 14px 16px; }
+  .faq__answer { padding: 4px 16px 16px; }
 }
+
 
 
 
