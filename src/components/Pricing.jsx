@@ -5,25 +5,64 @@ import UpsellModal from './UpsellModal'
 
 // O componente OnceTag foi removido pois a tag foi integrada diretamente no design do card.
 
+const benefitGroups = [
+  {
+    icon: '☁️',
+    title: '5 TB de armazenamento total',
+    subs: [
+      'Google Fotos, Drive e Gmail incluídos',
+      'Compartilhamento com até 5 pessoas',
+    ],
+  },
+  {
+    icon: '🤖',
+    title: 'Gemini 3.1 Pro',
+    subs: [
+      'A IA mais avançada do Google',
+    ],
+  },
+  {
+    icon: '🎬',
+    title: 'Veo 3.1 + Geração de Imagens',
+    subs: [
+      'Crie vídeos com narração e áudio nativo',
+      'Imagens originais geradas por IA',
+    ],
+  },
+  {
+    icon: '🧪',
+    title: 'Google AI Studio',
+    subs: [
+      'Acesso direto aos modelos Gemini mais recentes',
+      'Crie e teste prompts avançados sem limites',
+    ],
+  },
+  {
+    icon: '✨',
+    title: 'Gemini nos apps Google',
+    subs: [
+      'IA no Gmail, Docs, Slides, Meet e Vids',
+    ],
+  },
+]
+
 function Benefits() {
   return (
     <ul className="price__benefits">
-      <li className="price__benefit">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
-        <span><strong>5 TB</strong> de armazenamento total no Gmail, Fotos e Drive</span>
-      </li>
-      <li className="price__benefit">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
-        <span>Acesso ao <strong>Gemini 3 Pro</strong> Premium</span>
-      </li>
-      <li className="price__benefit">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
-        <span>Criação de <strong>Imagens e Vídeos</strong></span>
-      </li>
-      <li className="price__benefit">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
-        <span>IA no Gmail, Docs e Planilhas</span>
-      </li>
+      {benefitGroups.map(b => (
+        <li className="price__benefit" key={b.title}>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="price__check"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+          <div className="price__benefit-body">
+            <span className="price__benefit-title">
+              <span className="price__benefit-icon">{b.icon}</span>
+              {b.title}
+            </span>
+            {b.subs.map(s => (
+              <span className="price__benefit-sub" key={s}>{s}</span>
+            ))}
+          </div>
+        </li>
+      ))}
     </ul>
   )
 }

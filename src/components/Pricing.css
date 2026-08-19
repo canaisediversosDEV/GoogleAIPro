@@ -144,23 +144,64 @@
   margin: 0 0 32px 0;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 14px;
   text-align: left;
+  width: 100%;
 }
 
 .price__benefit {
-  font-size: 15px;
-  color: var(--text);
   display: flex;
   align-items: flex-start;
-  gap: 12px;
-  line-height: 1.4;
+  gap: 10px;
 }
 
-.price__benefit svg {
-  color: var(--green); /* Google Green */
+.price__check {
+  color: var(--green);
   flex-shrink: 0;
-  margin-top: 2px;
+  margin-top: 3px;
+}
+
+/* Corpo do benefício */
+.price__benefit-body {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+/* Título do benefício — destaque */
+.price__benefit-title {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text);
+  line-height: 1.3;
+}
+
+.price__benefit-icon {
+  font-size: 14px;
+  flex-shrink: 0;
+}
+
+/* Sub-itens — discretos mas legíveis */
+.price__benefit-sub {
+  font-size: 12.5px;
+  font-weight: 400;
+  color: var(--muted);
+  line-height: 1.45;
+  padding-left: 20px;
+  position: relative;
+}
+
+.price__benefit-sub::before {
+  content: '·';
+  position: absolute;
+  left: 8px;
+  color: var(--blue);
+  opacity: 0.45;
+  font-size: 14px;
+  line-height: 1.3;
 }
 
 /* Botões específicos de pricing */
