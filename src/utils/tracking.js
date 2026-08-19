@@ -2,9 +2,8 @@
 // CHECKOUT URLS — NÃO ALTERAR
 // =====================================================
 export const CHECKOUT = {
-  monthly:   'https://pay.lowify.com.br/checkout?product_id=vxpqap',
-  sixMonths: 'https://pay.lowify.com.br/checkout?product_id=B81YP1',
-  eighteen:  'https://pay.lowify.com.br/checkout?product_id=0hWOv3',
+  main:      'https://pay.lowify.com.br/checkout.php?product_id=B81YP1', // R$ 14,90
+  exitOffer: 'https://pay.lowify.com.br/go.php?offer=51aqd27',           // R$ 10,90 exit popup
 }
 
 // =====================================================

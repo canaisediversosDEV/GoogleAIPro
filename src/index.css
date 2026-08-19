@@ -124,3 +124,133 @@ a:hover {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+/* =====================================================
+   EXIT INTENT POPUP
+   ===================================================== */
+.exit-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(6, 9, 15, 0.88);
+  backdrop-filter: blur(8px);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  animation: exit-fade 0.3s ease-out;
+}
+
+@keyframes exit-fade {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.exit-modal {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  width: 90%;
+  max-width: 400px;
+  padding: 32px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+  animation: exit-up 0.35s cubic-bezier(0.4,0,0.2,1) forwards;
+}
+
+@keyframes exit-up {
+  from { opacity: 0; transform: translateY(24px) scale(0.96); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.exit-close {
+  position: absolute;
+  top: 14px;
+  right: 16px;
+  background: transparent;
+  border: none;
+  color: var(--muted);
+  font-size: 22px;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 6px;
+  transition: color 0.2s, background 0.2s;
+}
+.exit-close:hover {
+  color: var(--text);
+  background: var(--bg2);
+}
+
+.exit-badge {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: #fff;
+  background: linear-gradient(135deg, #ff7a00, #ff3d00);
+  padding: 6px 14px;
+  border-radius: 100px;
+  margin-bottom: 18px;
+  box-shadow: 0 4px 16px rgba(255,100,0,0.3);
+}
+
+.exit-title {
+  font-size: 26px;
+  font-weight: 900;
+  color: var(--text);
+  margin-bottom: 10px;
+  letter-spacing: -0.5px;
+}
+
+.exit-desc {
+  font-size: 14px;
+  color: var(--muted);
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.exit-price {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  padding: 18px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.exit-price-old {
+  font-size: 13px;
+  color: var(--muted);
+  text-decoration: line-through;
+  margin-bottom: 4px;
+}
+
+.exit-price-new {
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--text);
+}
+
+.exit-accept {
+  width: 100%;
+  padding: 16px;
+  border-radius: 100px;
+  background: var(--primary);
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 12px;
+}
+.exit-accept:hover { background: #1557b0; }
+
+.exit-decline {
+  background: transparent;
+  border: none;
+  color: var(--muted);
+  font-size: 12px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
