@@ -41,7 +41,7 @@ export default function Hero() {
           className="btn btn-primary hero__cta"
           id="hero-cta"
         >
-          🚀 Escolher meu plano
+          🔥 QUERO GARANTIR MEU ACESSO
         </a>
       </div>
     </section>

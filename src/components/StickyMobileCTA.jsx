@@ -14,15 +14,15 @@ export default function StickyMobileCTA() {
     <div className={`scta ${show ? 'scta--on' : ''}`} aria-hidden={!show}>
       <div className="scta__inner">
         <div>
-          <p className="scta__title">🔥 6 meses — R$ 19,90</p>
-          <p className="scta__sub">Pagamento único · Mais vendido</p>
+          <p className="scta__title">🔥 18 meses — R$ 14,90</p>
+          <p className="scta__sub">Pagamento único</p>
         </div>
         <a
           href="#pricing"
           className="btn btn-primary scta__btn"
           id="scta-btn"
         >
-          Quero agora
+          Garantir Acesso
         </a>
       </div>
     </div>
