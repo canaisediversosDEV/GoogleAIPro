@@ -144,7 +144,20 @@ export default function Pricing() {
 
         </div>
 
-        <p className="price__micro">Pagamento seguro. Você será direcionado ao checkout.</p>
+        <div className="price__trust">
+          <div className="price__trust-item">
+            <span className="price__trust-icon">🔒</span>
+            <span>Checkout Seguro Lowify</span>
+          </div>
+          <div className="price__trust-item">
+            <span className="price__trust-icon">⚡</span>
+            <span>Entrega Automática</span>
+          </div>
+          <div className="price__trust-item">
+            <span className="price__trust-icon">💳</span>
+            <span>Pagamento Único</span>
+          </div>
+        </div>
 
       </div>
 

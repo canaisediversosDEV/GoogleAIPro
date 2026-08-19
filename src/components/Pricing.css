@@ -18,6 +18,29 @@
   letter-spacing: -0.02em;
 }
 
+/* Trust badges */
+.price__trust {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+  flex-wrap: wrap;
+  margin-top: 4px;
+}
+
+.price__trust-item {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--muted);
+}
+
+.price__trust-icon {
+  font-size: 15px;
+}
+
 .price__sub {
   font-size: 18px;
   color: var(--muted);

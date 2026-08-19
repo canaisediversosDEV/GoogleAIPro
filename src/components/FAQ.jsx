@@ -4,24 +4,32 @@ import { CHECKOUT, handleCheckout } from '../utils/tracking'
 
 const faqs = [
   {
-    q: 'E se eu quiser começar pequeno?',
-    a: 'Comece pelo plano mensal de R$ 9,90. Sem compromisso de longo prazo.',
+    q: 'Existe mensalidade?',
+    a: 'Não! O pagamento é único e você terá o plano por 18 meses. Paga uma vez, usa à vontade.',
   },
   {
-    q: 'Quero pagar uma vez e esquecer.',
-    a: 'O plano de 6 ou 18 meses funciona com pagamento único. Paga uma vez, acessa durante todo o período.',
+    q: 'Precisa colocar cartão de crédito?',
+    a: 'Não precisa não. Você pode pagar pelo Pix mesmo, na hora, sem cadastrar cartão em lugar nenhum.',
   },
   {
-    q: 'Quero o maior período disponível.',
-    a: 'O plano de 18 meses é a opção de maior duração disponível.',
+    q: 'Como recebo o acesso após a compra?',
+    a: 'Na hora! Assim que o pagamento cair, chega um e-mail com tudo que você precisa para acessar. Nada de esperar dias.',
   },
   {
-    q: 'Não sei qual plano escolher.',
-    a: 'Se você quer testar, comece pelo mensal.\n\nSe quer pagamento único, escolha 6 ou 18 meses.\n\nSe quer o maior período pelo menor custo equivalente, escolha 18 meses.',
+    q: 'É seguro comprar aqui?',
+    a: 'Sim, pode ficar tranquilo. O checkout é da Lowify, que é uma plataforma segura e bem estabelecida no mercado. Seus dados ficam protegidos.',
   },
   {
     q: 'Preciso usar todas as ferramentas?',
-    a: 'Não. Use os recursos que fizerem sentido para suas necessidades. Não é obrigatório explorar tudo.',
+    a: 'Claro que não! Usa o que fizer sentido pra você. Tem gente que usa só o Drive e já considera que valeu. Outros usam tudo. Você decide.',
+  },
+  {
+    q: 'Funciona no celular?',
+    a: 'Funciona sim. No celular, no tablet, no computador. Onde você estiver, tá disponível.',
+  },
+  {
+    q: 'O que acontece quando o período acaba?',
+    a: 'Nada automático, pode ficar tranquilo. Quando chegar perto do fim, você decide se quer renovar. Não tem cobrança surpresa.',
   },
 ]
 
@@ -31,8 +39,8 @@ export default function FAQ() {
   return (
     <section className="faq section section--dark" id="faq">
       <div className="container">
-        <p className="section-tag">Ainda está pensando?</p>
-        <h2 className="faq__headline">Dúvidas rápidas.</h2>
+        <p className="section-tag">Tira-Dúvidas</p>
+        <h2 className="faq__headline">Perguntas Frequentes</h2>
 
         <div className="faq__list">
           {faqs.map((item, i) => (
