@@ -1,21 +1,13 @@
 import './StickyMobileCTA.css'
-import { useEffect, useState } from 'react'
-import { CHECKOUT, handleCheckout } from '../utils/tracking'
 
 export default function StickyMobileCTA() {
-  const [show, setShow] = useState(false)
-  useEffect(() => {
-    const fn = () => setShow(window.scrollY > 320)
-    window.addEventListener('scroll', fn, { passive: true })
-    return () => window.removeEventListener('scroll', fn)
-  }, [])
-
   return (
-    <div className={`scta ${show ? 'scta--on' : ''}`} aria-hidden={!show}>
+    <div className="scta scta--on">
       <div className="scta__inner">
-        <div>
-          <p className="scta__title">🔥 18 meses — R$ 14,90</p>
-          <p className="scta__sub">Pagamento único</p>
+        <div className="scta__text-block">
+          <span className="scta__title">🔥 18 MESES</span>
+          <span className="scta__price">R$ 14,90</span>
+          <span className="scta__sub">PAGAMENTO ÚNICO</span>
         </div>
         <a
           href="#pricing"
