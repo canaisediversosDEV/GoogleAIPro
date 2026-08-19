@@ -22,7 +22,7 @@ export default function StickyMobileCTA() {
           className="btn btn-primary scta__btn"
           id="scta-btn"
         >
-          Garantir Acesso
+          🔒 GARANTIR ACESSO
         </a>
       </div>
     </div>
