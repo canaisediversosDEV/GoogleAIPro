@@ -90,8 +90,8 @@ export default function Pricing() {
   return (
     <section className="price" id="pricing">
       <div className="c">
-        <h2 className="price__h2">Escolha seu acesso.</h2>
-        <p className="price__sub">Você escolhe quanto quer pagar.</p>
+        <h2 className="price__h2">Escolha seu Plano</h2>
+        <p className="price__sub">Pagamento Único — Sem mensalidades.</p>
 
         <div className="price__grid">
 
