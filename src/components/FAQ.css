@@ -10,7 +10,7 @@
   font-weight: 700;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #60a5fa;
+  color: var(--blue);
   margin-bottom: 10px;
 }
 
@@ -31,17 +31,18 @@
   gap: 10px;
 }
 
-/* Card escuro — estilo da referência */
+/* Card — layout da referência, cores do projeto */
 .faq__card {
-  background: rgba(24, 27, 32, 0.85);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: var(--bg);
+  border: 1px solid var(--border);
   border-radius: 14px;
   overflow: hidden;
-  transition: border-color var(--ease);
+  transition: border-color var(--ease), box-shadow var(--ease);
 }
 
 .faq__card:hover {
-  border-color: rgba(255, 255, 255, 0.2);
+  border-color: var(--blue);
+  box-shadow: 0 2px 12px rgba(26, 115, 232, 0.08);
 }
 
 /* Botão pergunta */
@@ -55,7 +56,7 @@
   min-height: 52px;
   background: none;
   border: none;
-  color: #ffffff;
+  color: var(--text);
   font-family: var(--font);
   font-size: 14px;
   font-weight: 700;
@@ -66,7 +67,7 @@
 
 /* Chevron SVG animado */
 .faq__chevron-svg {
-  color: #f59e0b;
+  color: var(--blue);
   flex-shrink: 0;
   transition: transform 0.25s ease;
   transform: rotate(0deg);
@@ -79,13 +80,13 @@
 /* Resposta */
 .faq__answer {
   padding: 4px 18px 18px;
-  border-top: 1px solid rgba(255, 255, 255, 0.05);
-  background: rgba(0, 0, 0, 0.2);
+  border-top: 1px solid var(--border);
+  background: var(--bg2);
 }
 
 .faq__answer p {
   font-size: 13px;
-  color: #a1a1aa;
+  color: var(--muted);
   line-height: 1.75;
 }
 
@@ -95,6 +96,7 @@
   .faq__question { font-size: 13px; padding: 14px 16px; }
   .faq__answer { padding: 4px 16px 16px; }
 }
+
 
 
 
