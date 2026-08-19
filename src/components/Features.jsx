@@ -1,14 +1,48 @@
 import './Features.css'
 
-const items = [
-  { icon: '🤖', name: 'Gemini Pro' },
-  { icon: '🎨', name: 'Gerar imagens' },
-  { icon: '🎬', name: 'Gerar vídeos' },
-  { icon: '📚', name: 'NotebookLM' },
-  { icon: '🎥', name: 'Google Flow' },
-  { icon: '💻', name: 'IA p/ código' },
-  { icon: '☁️', name: '5 TB storage' },
-  { icon: '✨', name: 'IA nos apps Google' },
+const benefits = [
+  {
+    icon: '☁️',
+    title: '5 TB de armazenamento total',
+    items: [
+      'Espaço de armazenamento para o Google Fotos, Drive e Gmail',
+      'Compartilhamento com até cinco pessoas',
+    ],
+  },
+  {
+    icon: '🤖',
+    title: 'Gemini 3.1 Pro',
+    items: [
+      'A IA mais avançada do Google',
+    ],
+  },
+  {
+    icon: '🎬',
+    title: 'Nano Banana Pro + Veo 3.1',
+    items: [
+      'Envie imagens para o modelo do Veo mais recente e crie narrativas mais dinâmicas com a geração nativa de áudio',
+      'Crie vídeos incríveis',
+    ],
+  },
+  {
+    icon: '🎥',
+    title: 'Google Flow',
+    items: [
+      'Dê forma às suas ideias',
+      'Crie sem limites',
+      'Edite com confiança',
+    ],
+  },
+  {
+    icon: '✨',
+    title: 'Gemini no Gmail, Docs, Vids e outros apps',
+    items: [
+      'Ajuda você a escrever no Gmail e no Docs',
+      'Gera imagens originais no Slides',
+      'Melhora a qualidade do vídeo no Meet',
+      'Crie vídeos interessantes no Vids',
+    ],
+  },
 ]
 
 export default function Features() {
@@ -21,10 +55,17 @@ export default function Features() {
         </h2>
 
         <div className="feat__grid">
-          {items.map(i => (
-            <div className="feat__card" key={i.name}>
-              <span className="feat__icon">{i.icon}</span>
-              <span className="feat__name">{i.name}</span>
+          {benefits.map(b => (
+            <div className="feat__card" key={b.title}>
+              <div className="feat__card-header">
+                <span className="feat__icon">{b.icon}</span>
+                <span className="feat__title">{b.title}</span>
+              </div>
+              <ul className="feat__list">
+                {b.items.map(item => (
+                  <li className="feat__item" key={item}>{item}</li>
+                ))}
+              </ul>
             </div>
           ))}
         </div>
@@ -34,3 +75,4 @@ export default function Features() {
     </section>
   )
 }
+
