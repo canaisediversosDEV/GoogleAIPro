@@ -24,16 +24,7 @@ export default function Hero() {
             PLACEHOLDER DO VÍDEO
         ──────────────────────────────────────────────── */}
         <div className="hero__video-wrapper">
-          {/* PLACEHOLDER — remover após adicionar o vídeo real (iframe do YouTube ou <video> local) */}
-          <div className="hero__video-ph">
-            <div className="hero__video-play">
-              <svg width="26" height="26" viewBox="0 0 24 24" fill="white">
-                <path d="M8 5v14l11-7z"/>
-              </svg>
-            </div>
-            <p className="hero__video-ph-text">Demonstração do produto</p>
-            <p className="hero__video-ph-hint">Adicione o vídeo em <code>Hero.jsx</code></p>
-          </div>
+          <wistia-player media-id="5gsq306rrk" aspect="1.7712177121771218"></wistia-player>
         </div>
 
         <a

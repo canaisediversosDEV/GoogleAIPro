@@ -27,36 +27,7 @@ export default function VideoSection() {
         ──────────────────────────────────────────────── */}
 
         <div className="vid__frame">
-
-          {/* Arquivo local — descomente quando tiver o vídeo */}
-          {/*
-          <video controls preload="none" poster="/poster.jpg">
-            <source src="/demo.mp4" type="video/mp4" />
-          </video>
-          */}
-
-          {/* YouTube — descomente e preencha SEU_ID */}
-          {/*
-          <iframe
-            src="https://www.youtube.com/embed/SEU_ID?rel=0"
-            title="Demonstração Google AI Pro"
-            allow="autoplay; encrypted-media; picture-in-picture"
-            allowFullScreen
-            loading="lazy"
-          />
-          */}
-
-          {/* PLACEHOLDER — remover após adicionar o vídeo */}
-          <div className="vid__ph">
-            <div className="vid__play">
-              <svg width="26" height="26" viewBox="0 0 24 24" fill="white">
-                <path d="M8 5v14l11-7z"/>
-              </svg>
-            </div>
-            <p className="vid__ph-text">Demonstração do produto</p>
-            <p className="vid__ph-hint">Adicione o vídeo em <code>VideoSection.jsx</code></p>
-          </div>
-
+          <wistia-player media-id="5gsq306rrk" aspect="1.7712177121771218"></wistia-player>
         </div>
 
         <div className="vid__cta-wrap">

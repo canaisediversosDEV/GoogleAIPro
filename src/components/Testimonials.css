@@ -48,6 +48,51 @@
   display: block;
 }
 
+.testi__contact {
+  margin-top: 60px;
+  padding-top: 40px;
+  border-top: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.testi__contact-title {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--text);
+}
+
+.testi__contact-sub {
+  font-size: 14px;
+  color: var(--muted);
+  margin-bottom: 8px;
+}
+
+.btn-whatsapp {
+  background: #25D366;
+  color: #fff;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 16px 32px;
+  font-weight: 800;
+  font-size: 14px;
+  border-radius: var(--r-md);
+  text-decoration: none;
+  transition: all 0.2s;
+  box-shadow: 0 4px 16px rgba(37, 211, 102, 0.3);
+}
+
+.btn-whatsapp:hover {
+  background: #1da851;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(37, 211, 102, 0.4);
+}
+
 @media (max-width: 600px) {
   .testi { padding: 60px 0; }
   .testi__grid {

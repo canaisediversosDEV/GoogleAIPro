@@ -68,14 +68,27 @@
   max-width: 800px;
   margin: 0 auto 48px;
   border-radius: 20px;
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(0, 0, 0, 0.85);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   overflow: hidden;
   aspect-ratio: 16/9;
-  border: 1px solid rgba(255,255,255,0.4);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.08), 0 1px 3px rgba(0,0,0,0.05);
+  border: 1px solid rgba(255,255,255,0.2);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2), 0 1px 3px rgba(0,0,0,0.1);
   transition: transform var(--ease), box-shadow var(--ease);
+}
+
+.hero__video-wrapper wistia-player {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+wistia-player[media-id='5gsq306rrk']:not(:defined) {
+  background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/5gsq306rrk/swatch');
+  display: block;
+  filter: blur(5px);
+  padding-top: 56.46%;
 }
 
 .hero__video-wrapper:hover {
