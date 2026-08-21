@@ -67,14 +67,14 @@ export default function Pricing() {
   return (
     <section className="price" id="pricing">
       <div className="c">
-        <h2 className="price__h2">Escolha seu Plano</h2>
+        <h2 className="price__h2">Garanta Seu Acesso Promocional</h2>
         <p className="price__sub">Pagamento Único — Sem mensalidades.</p>
 
         <div className="price__grid price__grid--single">
 
           {/* PLANO ÚNICO */}
           <div className="price__card price__card--hot" id="card-main">
-            <span className="price__badge">Mais Popular</span>
+            <span className="price__badge">🔥 ESGOTANDO — ÚLTIMAS UNIDADES</span>
             <div className="price__period">
               <span>Google AI Pro — 18 Meses</span>
             </div>
