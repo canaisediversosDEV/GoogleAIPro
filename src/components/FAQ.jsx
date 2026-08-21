@@ -8,23 +8,23 @@ const faqs = [
   },
   {
     q: 'Precisa colocar cartão de crédito?',
-    a: 'Não precisa não. Você pode pagar pelo Pix mesmo, na hora, sem cadastrar cartão em lugar nenhum.',
+    a: 'Não precisa. Você pode pagar via Pix na hora, sem precisar cadastrar cartão em lugar nenhum.',
   },
   {
     q: 'Como recebo o acesso após a compra?',
-    a: 'Na hora! Assim que o pagamento cair, chega um e-mail com tudo que você precisa para acessar. Nada de esperar dias.',
+    a: 'Na hora! Assim que o pagamento for confirmado, você receberá um e-mail com todas as instruções de acesso.',
   },
   {
     q: 'É seguro comprar aqui?',
-    a: 'Sim, pode ficar tranquilo. O checkout é da Lowify, uma plataforma segura e bem estabelecida no mercado. Seus dados ficam protegidos.',
+    a: 'Sim, totalmente seguro. O checkout é processado pela Lowify, uma plataforma líder e segura. Seus dados ficam protegidos.',
   },
   {
     q: 'Preciso usar todas as ferramentas?',
-    a: 'Claro que não! Usa o que fizer sentido pra você. Tem gente que usa só o Drive e já considera que valeu. Outros usam tudo. Você decide.',
+    a: 'Claro que não! Use o que fizer sentido para você. Há quem use apenas o Drive e já considere que valeu a pena. Outros usam tudo. Você decide.',
   },
   {
     q: 'Funciona no celular?',
-    a: 'Funciona sim. No celular, no tablet, no computador. Onde você estiver, tá disponível.',
+    a: 'Funciona perfeitamente no celular, tablet e computador. Onde você estiver, o acesso estará disponível.',
   },
   {
     q: 'O que acontece quando o período acaba?',

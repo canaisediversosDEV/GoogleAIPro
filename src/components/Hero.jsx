@@ -13,7 +13,7 @@ export default function Hero() {
         </div>
 
         <h1 className="hero__h1">
-          GOOGLE IA PRO <span className="text-gradient">18 MESES</span> NO SEU EMAIL
+          GOOGLE AI PRO <span className="text-gradient">18 MESES</span> NO SEU E-MAIL
         </h1>
 
         <p className="hero__sub">
@@ -30,7 +30,7 @@ export default function Hero() {
               DEMONSTRAÇÃO EM VÍDEO
             </span>
             <h2 className="hero__video-title">
-              Ativação do Plano <span className="text-gradient">Na Prática</span>
+              Ativação do Plano <span className="text-gradient">na Prática</span>
             </h2>
             <p className="hero__video-subtitle">
               Veja em menos de 2 minutos como o acesso de 18 Meses ao Google AI Pro é liberado no seu e-mail.
