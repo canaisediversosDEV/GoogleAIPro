@@ -129,18 +129,20 @@
   border: 1px solid rgba(255, 255, 255, 0.12);
   box-shadow: 
     0 24px 60px -12px rgba(0, 0, 0, 0.5),
-    0 0 50px rgba(26, 115, 232, 0.18),
-    0 0 80px rgba(162, 89, 255, 0.12);
+    0 0 40px rgba(26, 115, 232, 0.15);
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  will-change: transform;
+  transform: translateZ(0);
+  contain: layout paint;
+  touch-action: pan-y;
 }
 
 .hero__video-card:hover {
-  transform: translateY(-4px);
+  transform: translateY(-4px) translateZ(0);
   box-shadow: 
     0 32px 70px -12px rgba(0, 0, 0, 0.6),
-    0 0 60px rgba(26, 115, 232, 0.25),
-    0 0 100px rgba(162, 89, 255, 0.18);
+    0 0 50px rgba(26, 115, 232, 0.22);
 }
 
 /* Barra Superior da Moldura */
@@ -208,6 +210,8 @@
   aspect-ratio: 16/9;
   background: #000;
   overflow: hidden;
+  contain: strict;
+  transform: translateZ(0);
 }
 
 .hero__video-wrapper wistia-player {
@@ -250,33 +254,48 @@ wistia-player[media-id='5gsq306rrk']:not(:defined) {
   text-underline-offset: 2px;
 }
 
-/* ── MOBILE ── */
-@media (max-width: 600px) {
+/* ── MOBILE OPTIMIZATIONS (ULTRA SMOOTH SCROLL) ── */
+@media (max-width: 768px) {
   .hero {
-    padding: 72px 0 56px;
+    padding: 56px 0 40px;
+    background-image: none; /* Simplifica fundo no mobile para eliminar repaints */
+    background-color: var(--bg2);
+  }
+
+  .hero__video-section {
+    margin: 28px auto 36px;
+  }
+
+  .hero__video-card {
+    border-radius: 14px;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35); /* Sombra única super leve */
+  }
+
+  .hero__video-bar {
+    padding: 10px 14px;
+  }
+
+  .hero__video-bar-title {
+    font-size: 11px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 180px;
+  }
+
+  .hero__video-pulse {
+    animation: none; /* Desativa animação contínua no mobile */
   }
 
   .hero__h1 {
-    font-size: 36px;
+    font-size: 32px;
     letter-spacing: -0.5px;
-    line-height: 1.1;
+    line-height: 1.15;
   }
 
   .hero__sub {
-    font-size: 16px;
-  }
-
-  .hero__pills {
-    flex-direction: column;
-    gap: 12px;
-    width: 100%;
-    max-width: 320px;
-    margin: 0 auto 24px auto;
-  }
-
-  .hero__pill {
-    width: 100%;
-    padding: 16px;
+    font-size: 15px;
+    padding: 0 8px;
   }
 
   .hero__cta {
