@@ -75,6 +75,18 @@ export default function Pricing() {
           {/* PLANO ÚNICO */}
           <div className="price__card price__card--hot" id="card-main">
             <span className="price__badge">🔥 ESGOTANDO — ÚLTIMAS UNIDADES</span>
+
+            {/* Barra de Escassez / Progresso */}
+            <div className="price__stock-bar">
+              <div className="price__stock-info">
+                <span className="price__stock-label">⚠️ Licenças promocionais restantes:</span>
+                <span className="price__stock-count">14 de 100</span>
+              </div>
+              <div className="price__progress-track">
+                <div className="price__progress-fill" />
+              </div>
+            </div>
+
             <div className="price__period">
               <span>Google AI Pro — 18 Meses</span>
             </div>
@@ -110,6 +122,22 @@ export default function Pricing() {
           <div className="price__trust-item">
             <span className="price__trust-icon">💳</span>
             <span>Pagamento Único</span>
+          </div>
+        </div>
+
+        {/* Selo de Garantia 7 Dias */}
+        <div className="price__guarantee">
+          <div className="price__guarantee-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#34a853" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              <path d="m9 12 2 2 4-4"/>
+            </svg>
+          </div>
+          <div className="price__guarantee-content">
+            <h4 className="price__guarantee-title">Garantia Incondicional de 7 Dias</h4>
+            <p className="price__guarantee-desc">
+              Teste o <strong>Google AI Pro</strong> sem nenhum risco. Se por qualquer motivo você não ficar 100% satisfeito, devolvemos todo o seu dinheiro sem burocracia.
+            </p>
           </div>
         </div>
 
