@@ -3,28 +3,32 @@ import { useState } from 'react'
 
 const faqs = [
   {
+    q: 'Por que o valor é tão baixo? É golpe?',
+    a: 'Não. Nós adquirimos um lote gigantesco de licenças corporativas (Enterprise) diretamente com fornecedores em volume. Estamos repassando as licenças não utilizadas pelo preço de custo promocional para fechar o lote.',
+  },
+  {
+    q: 'Vou precisar passar a senha do meu Gmail?',
+    a: 'De forma alguma! Você NÃO precisa informar sua senha. O upgrade é feito através de um link de convite oficial enviado para o seu e-mail. Seus arquivos continuam 100% privados e criptografados, apenas você tem acesso.',
+  },
+  {
     q: 'Existe mensalidade?',
     a: 'Não! O pagamento é único e você terá o plano por 18 meses. Paga uma vez, usa à vontade.',
   },
   {
     q: 'Precisa colocar cartão de crédito?',
-    a: 'Não precisa. Você pode pagar via Pix na hora, sem precisar cadastrar cartão em lugar nenhum.',
+    a: 'Não precisa. Recomendamos fortemente o pagamento via PIX. A aprovação é imediata e você não precisa cadastrar cartão em lugar nenhum.',
   },
   {
     q: 'Como recebo o acesso após a compra?',
-    a: 'Na hora! Assim que o pagamento for confirmado, você receberá um e-mail com todas as instruções de acesso.',
+    a: 'Na hora! Assim que o pagamento via Pix ou Cartão for confirmado, você receberá um e-mail automático com o link de ativação imediata.',
   },
   {
     q: 'É seguro comprar aqui?',
-    a: 'Sim, totalmente seguro. O checkout é processado pela Lowify, uma plataforma líder e segura. Seus dados ficam protegidos.',
+    a: 'Sim, totalmente seguro. O checkout é processado pela Lowify, uma das plataformas mais seguras do Brasil. Seus dados ficam protegidos com criptografia militar.',
   },
   {
     q: 'Preciso usar todas as ferramentas?',
-    a: 'Claro que não! Use o que fizer sentido para você. Há quem use apenas o Drive e já considere que valeu a pena. Outros usam tudo. Você decide.',
-  },
-  {
-    q: 'Funciona no celular?',
-    a: 'Funciona perfeitamente no celular, tablet e computador. Onde você estiver, o acesso estará disponível.',
+    a: 'Claro que não! Use o que fizer sentido para você. Há quem use apenas o Drive de 5TB e já considere que valeu a pena. Outros usam só o Gemini. Você decide.',
   },
   {
     q: 'O que acontece quando o período acaba?',
