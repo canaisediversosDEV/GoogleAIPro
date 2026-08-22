@@ -32,5 +32,15 @@ export function trackEvent(eventName, planLabel) {
 export function handleCheckout(url, planLabel) {
   // Evento: início do checkout
   trackEvent('InitiateCheckout', planLabel)
-  window.location.href = url
+
+  // Recupera os UTMs da página atual (ex: ?utm_source=fb&utm_campaign=vendas)
+  const utms = window.location.search
+
+  let finalUrl = url
+  if (utms) {
+    // Se o link do checkout já tiver uma '?', trocamos a '?' do UTM por '&'
+    finalUrl += url.includes('?') ? utms.replace('?', '&') : utms
+  }
+
+  window.location.href = finalUrl
 }
