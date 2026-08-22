@@ -76,16 +76,7 @@ export default function Pricing() {
           <div className="price__card price__card--hot" id="card-main">
             <span className="price__badge">🔥 ESGOTANDO — ÚLTIMAS UNIDADES</span>
 
-            {/* Barra de Escassez / Progresso */}
-            <div className="price__stock-bar">
-              <div className="price__stock-info">
-                <span className="price__stock-label">⚠️ Licenças promocionais restantes:</span>
-                <span className="price__stock-count">14 de 100</span>
-              </div>
-              <div className="price__progress-track">
-                <div className="price__progress-fill" />
-              </div>
-            </div>
+
 
             <div className="price__period">
               <span>Google AI Pro — 18 Meses</span>
