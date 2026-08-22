@@ -98,7 +98,7 @@ export default function Pricing() {
               GARANTIR ACESSO — R$ 14,90
             </button>
             <p style={{ marginTop: '12px', fontSize: '13px', color: 'var(--text-muted)', textAlign: 'center' }}>
-              🔒 Pagamento 100% Seguro. Recomendamos PIX para ativação imediata.
+              🔒 Pagamento 100% Seguro. Liberado exclusivamente via PIX para ativação imediata.
             </p>
           </div>
 

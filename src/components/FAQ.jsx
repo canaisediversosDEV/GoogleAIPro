@@ -15,12 +15,12 @@ const faqs = [
     a: 'Não! O pagamento é único e você terá o plano por 18 meses. Paga uma vez, usa à vontade.',
   },
   {
-    q: 'Precisa colocar cartão de crédito?',
-    a: 'Não precisa. Recomendamos fortemente o pagamento via PIX. A aprovação é imediata e você não precisa cadastrar cartão em lugar nenhum.',
+    q: 'Como posso pagar?',
+    a: 'O pagamento é feito exclusivamente via PIX. A aprovação é imediata, segura e você não precisa cadastrar cartão de crédito ou dados bancários em lugar nenhum.',
   },
   {
     q: 'Como recebo o acesso após a compra?',
-    a: 'Na hora! Assim que o pagamento via Pix ou Cartão for confirmado, você receberá um e-mail automático com o link de ativação imediata.',
+    a: 'Na hora! Assim que o pagamento via Pix for confirmado, você receberá um e-mail automático com o link de ativação imediata.',
   },
   {
     q: 'É seguro comprar aqui?',
