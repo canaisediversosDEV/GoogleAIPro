@@ -1,10 +1,10 @@
 import './Testimonials.css'
 
 const reviewImages = [
-  'https://i.imgur.com/TbvtujW.png',
-  'https://i.imgur.com/rIagcLE.png',
-  'https://i.imgur.com/6seQHbX.png',
-  'https://i.imgur.com/x6YB2P7.png'
+  'https://i.imgur.com/SIzxRFS.jpeg',
+  'https://i.imgur.com/6iuCnqw.jpeg',
+  'https://i.imgur.com/5kKGYx9.jpeg',
+  'https://i.imgur.com/OZ9oiSG.jpeg'
 ]
 
 export default function Testimonials() {
