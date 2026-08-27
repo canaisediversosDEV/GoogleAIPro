@@ -1,11 +1,10 @@
 import './Hero.css'
-import { CHECKOUT, handleCheckout } from '../utils/tracking'
 
 export default function Hero() {
   return (
     <section className="hero">
 
-      {/* ── Barra de Urgência no Topo ── */}
+      {/* ── Barra de Urgência Slim ── */}
       <div className="hero__urgency-bar">
         <span className="hero__urgency-pulse" />
         <span>🔥 <strong>Últimas licenças disponíveis</strong> — Esta página pode sair do ar a qualquer momento</span>
@@ -26,26 +25,8 @@ export default function Hero() {
           Gemini Pro, 5TB de armazenamento, geração de vídeos e imagens com IA — tudo liberado no seu e-mail em minutos. Sem mensalidade, sem burocracia.
         </p>
 
-        {/* ── Ancoragem de Preço no Hero ── */}
-        <div className="hero__price-anchor">
-          <span className="hero__price-old">De R$ 197,00</span>
-          <span className="hero__price-arrow">→</span>
-          <span className="hero__price-new">Por apenas <strong>R$ 14,90</strong></span>
-          <span className="hero__price-badge">PAGAMENTO ÚNICO</span>
-        </div>
-
-        {/* ── CTA Principal → direto ao checkout ── */}
-        <button
-          className="btn btn-primary hero__cta"
-          id="hero-cta"
-          onClick={() => handleCheckout(CHECKOUT.main, 'hero-14-90')}
-        >
-          🔥 QUERO MEUS 18 MESES POR R$ 14,90
-        </button>
-        <p className="hero__micro">🔒 Pagamento seguro via PIX · Acesso imediato</p>
-
         {/* ────────────────────────────────────────────────
-            SEÇÃO E MOLDURA DO VÍDEO
+            SEÇÃO E MOLDURA DO VÍDEO — mantido em destaque
         ──────────────────────────────────────────────── */}
         <div className="hero__video-section">
           <div className="hero__video-header">
@@ -88,6 +69,14 @@ export default function Hero() {
           </div>
         </div>
 
+        {/* CTA → rola até a seção de preços (aquece antes do checkout) */}
+        <a
+          href="#pricing"
+          className="btn btn-primary hero__cta"
+          id="hero-cta"
+        >
+          🔥 QUERO GARANTIR MEU ACESSO
+        </a>
       </div>
     </section>
   )

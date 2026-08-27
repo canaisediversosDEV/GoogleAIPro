@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import Hero from './components/Hero'
+import Features from './components/Features'
 import Pricing from './components/Pricing'
 import Testimonials from './components/Testimonials'
 import FAQ from './components/FAQ'
@@ -61,8 +62,9 @@ export default function App() {
     <>
       <main id="main-content">
         <Hero />
-        <Testimonials />
+        <Features />
         <Pricing />
+        <Testimonials />
         <FAQ />
       </main>
       <Footer />

@@ -13,27 +13,27 @@
   background-position: center;
 }
 
-/* ── Barra de Urgência Topo ── */
+/* ── Barra de Urgência Slim ── */
 .hero__urgency-bar {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
-  padding: 10px 16px;
+  padding: 8px 16px;
   background: linear-gradient(90deg, #ea4335, #ff5722, #ea4335);
   background-size: 200% 100%;
   animation: urgency-slide 3s ease-in-out infinite;
   color: #fff;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 600;
   letter-spacing: 0.02em;
   margin-bottom: 40px;
 }
 
 .hero__urgency-pulse {
-  width: 8px;
-  height: 8px;
+  width: 6px;
+  height: 6px;
   background: #fff;
   border-radius: 50%;
   animation: pulse-glow-white 2s infinite;
@@ -94,97 +94,16 @@
   font-size: 20px;
   line-height: 1.5;
   color: var(--muted);
-  margin-bottom: 32px;
+  margin-bottom: 40px;
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* ── Ancoragem de Preço no Hero ── */
-.hero__price-anchor {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  flex-wrap: wrap;
-  margin-bottom: 28px;
-  padding: 16px 24px;
-  background: rgba(26, 115, 232, 0.06);
-  border: 1px solid rgba(26, 115, 232, 0.15);
-  border-radius: 16px;
-  max-width: 520px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.hero__price-old {
-  font-size: 16px;
-  color: var(--muted);
-  text-decoration: line-through;
-  font-weight: 500;
-}
-
-.hero__price-arrow {
-  font-size: 18px;
-  color: var(--blue);
-  font-weight: 700;
-}
-
-.hero__price-new {
-  font-size: 20px;
-  color: var(--text);
-  font-weight: 600;
-}
-
-.hero__price-new strong {
-  font-size: 28px;
-  font-weight: 900;
-  color: var(--blue);
-}
-
-.hero__price-badge {
-  font-size: 10px;
-  font-weight: 800;
-  letter-spacing: 0.08em;
-  color: #fff;
-  background: var(--green);
-  padding: 4px 10px;
-  border-radius: 100px;
-}
-
-/* CTA */
-.hero__cta {
-  width: 100%;
-  max-width: 460px;
-  margin-bottom: 12px;
-  font-size: clamp(14px, 4vw, 17px);
-  padding: 20px 32px;
-  justify-content: center;
-}
-
-.hero__micro {
-  font-size: 13px;
-  color: var(--muted);
-  margin-bottom: 0;
-}
-
-.hero__link {
-  background: none;
-  border: none;
-  color: #60a5fa;
-  font-family: var(--font);
-  font-size: 13px;
-  font-weight: 600;
-  cursor: pointer;
-  padding: 0;
-  text-decoration: underline;
-  text-underline-offset: 2px;
-}
-
 /* ── Vídeo no Hero (Container & Card Premium) ── */
 .hero__video-section {
   max-width: 860px;
-  margin: 40px auto 0;
+  margin: 40px auto 48px;
   text-align: center;
 }
 
@@ -346,7 +265,34 @@ wistia-player[media-id='5gsq306rrk']:not(:defined) {
   padding-top: 56.46%;
 }
 
-/* ── MOBILE OPTIMIZATIONS (ULTRA SMOOTH SCROLL) ── */
+/* CTA */
+.hero__cta {
+  width: 100%;
+  max-width: 420px;
+  margin-bottom: 14px;
+  font-size: clamp(14px, 4vw, 16px);
+  padding: 18px 32px;
+  justify-content: center;
+}
+
+.hero__micro {
+  font-size: 13px;
+  color: var(--muted);
+}
+.hero__link {
+  background: none;
+  border: none;
+  color: #60a5fa;
+  font-family: var(--font);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+/* ── MOBILE OPTIMIZATIONS ── */
 @media (max-width: 768px) {
   .hero {
     padding: 0 0 40px;
@@ -356,13 +302,13 @@ wistia-player[media-id='5gsq306rrk']:not(:defined) {
 
   .hero__urgency-bar {
     font-size: 11px;
-    padding: 8px 12px;
+    padding: 7px 12px;
     gap: 6px;
     margin-bottom: 28px;
   }
 
   .hero__video-section {
-    margin: 28px auto 0;
+    margin: 28px auto 36px;
   }
 
   .hero__video-card {
@@ -397,20 +343,10 @@ wistia-player[media-id='5gsq306rrk']:not(:defined) {
     padding: 0 8px;
   }
 
-  .hero__price-anchor {
-    gap: 6px;
-    padding: 12px 16px;
-    flex-direction: column;
-  }
-
-  .hero__price-arrow {
-    display: none;
-  }
-
   .hero__cta {
     max-width: 100%;
     font-size: 15px;
-    padding: 18px 20px;
+    padding: 16px 20px;
   }
 }
 
