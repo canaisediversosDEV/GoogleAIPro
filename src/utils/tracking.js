@@ -29,6 +29,29 @@ export function trackEvent(eventName, planLabel) {
   console.log(`[TRACK] ${eventName} — ${planLabel}`)
 }
 
+// =====================================================
+// OVERLAY DE TRANSIÇÃO PARA CHECKOUT
+// Reduz a quebra de confiança na transição para o checkout externo
+// =====================================================
+function showCheckoutOverlay(callback) {
+  // Cria o overlay
+  const overlay = document.createElement('div')
+  overlay.className = 'checkout-overlay'
+  overlay.innerHTML = `
+    <div class="checkout-overlay__card">
+      <div class="checkout-overlay__spinner"></div>
+      <p class="checkout-overlay__title">🔒 Redirecionando para pagamento seguro...</p>
+      <p class="checkout-overlay__sub">Checkout protegido por criptografia Lowify. Seus dados estão 100% seguros.</p>
+    </div>
+  `
+  document.body.appendChild(overlay)
+
+  // Aguarda 1.5s para reforçar segurança e depois redireciona
+  setTimeout(() => {
+    callback()
+  }, 1500)
+}
+
 export function handleCheckout(url, planLabel) {
   // Evento: início do checkout
   trackEvent('InitiateCheckout', planLabel)
@@ -42,5 +65,8 @@ export function handleCheckout(url, planLabel) {
     finalUrl += url.includes('?') ? utms.replace('?', '&') : utms
   }
 
-  window.location.href = finalUrl
+  // Mostra overlay de transição antes de redirecionar
+  showCheckoutOverlay(() => {
+    window.location.href = finalUrl
+  })
 }

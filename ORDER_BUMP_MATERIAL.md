@@ -1,0 +1,94 @@
+# 🚀 GUIA & PACK: ORDER BUMP GOOGLE AI PRO (R$ 39,90)
+
+Este arquivo contém tudo o que você precisa para configurar o seu Order Bump no checkout (Lowify, Kiwify, Hotmart, etc.) e já entregar um material pronto e profissional ao cliente.
+
+---
+
+## 📌 PARTE 1: COPY PRONTA PARA O CHECKOUT
+
+Copie e cole estas configurações na sua plataforma de vendas:
+
+* **Nome do Produto Adicional:** Pack Secreto de Super Prompts: Gemini 3.1 Pro & Veo
+* **Preço De:** R$ 97,00
+* **Preço Por:** R$ 39,90
+
+### ✍️ Texto do Checkbox (Headline):
+> **[ ] SIM! Levar o Pack Secreto de +500 Prompts para Gemini 3.1 Pro & Veo por apenas R$ 39,90**
+
+### 📝 Descrição do Order Bump:
+> *Multiplique seus resultados logo no primeiro minuto. Receba comandos prontos para criar roteiros virais, e-mails de alta conversão, automações no Google Workspace e vídeos cinematográficos com IA. Oferta única e exclusiva para este pedido.*
+
+---
+
+## 🤖 PARTE 2: PROMPT MESTRE (Para Gerar Mais Materiais no Gemini/ChatGPT)
+
+Se quiser expandir o material no futuro, copie e cole este comando em qualquer IA:
+
+```text
+Você é um Copywriter e Especialista em Inteligência Artificial focado em produtos digitais de alta conversão.
+
+CONTEXTO:
+Vendo o acesso ao "Google AI Pro 18 Meses" (Gemini 3.1 Pro, Veo 3.1, 5TB de Nuvem) por R$ 14,90.
+Criei um Order Bump de R$ 4,90 chamado "Pack de Super Prompts de Alta Performance".
+
+SUA TAREFA:
+Crie um guia prático em formato Markdown com comandos altamente eficientes e prontos para copiar e colar para o Gemini 3.1 Pro e Veo 3.1 nas seguintes categorias:
+1. Criação de Conteúdo e Roteiros Virais (YouTube, Reels, TikTok).
+2. Produtividade & Negócios (E-mails persuasivos, análise de planilhas, planejamento semanal).
+3. Criação de Vídeos Realistas no Veo 3.1 (Prompts detalhados com ângulos de câmera, estilos de iluminação e render 4K).
+4. Google Workspace Inteligente (Comandos para Gmail, Google Docs e Google Sheets).
+
+Use uma linguagem didática, direta ao ponto e pronta para ser transformada em PDF de entrega.
+```
+
+---
+
+## 🎁 PARTE 3: CONTEÚDO PRONTO PARA ENTREGA (EBOOK / GUIA EM PDF)
+
+*(Você pode copiar o conteúdo abaixo, colar no Google Docs/Canva e exportar como PDF para entregar aos compradores)*
+
+---
+
+# 📚 GUIA PRÁTICO: SUPER PROMPTS GEMINI 3.1 PRO & VEO
+
+Parabéns por garantir o seu acesso ao ecossistema Google AI Pro! Abaixo estão os comandos mais poderosos para você copiar, colar e extrair 100% do potencial da sua IA.
+
+---
+
+### 1️⃣ CRIAÇÃO DE CONTEÚDO & VENDAS
+
+#### 🔥 Prompt 1: Roteiro Viral para Reels / TikTok / Shorts (Retenção Máxima)
+> **Comando:**
+> *"Atue como um estrategista de conteúdo viral. Crie 3 opções de roteiros curtos (30 a 45 segundos) sobre o tema: `[SEU TEMA/PRODUTO]`. Cada roteiro deve conter: 1. Gancho irresistível nos primeiros 3 segundos para parar a rolagem do feed; 2. Desenvolvimento com quebra de padrão ou dica prática; 3. Chamada para Ação (CTA) clara convidando a comentar ou clicar no link da bio."*
+
+#### ✉️ Prompt 2: E-mail de Vendas no Modelo PAS (Problema - Agitação - Solução)
+> **Comando:**
+> *"Escreva um e-mail de vendas curto e direto ao ponto para divulgar `[SEU PRODUTO/SERVIÇO]`. Foque na maior dor do meu público-alvo que é `[DOR PRINCIPAL]`. Agite as consequências de não resolver esse problema agora e apresente meu produto como o caminho mais rápido e seguro."*
+
+---
+
+### 2️⃣ PRODUTIVIDADE & GOOGLE WORKSPACE
+
+#### 📊 Prompt 3: Assistente de Fórmulas e Análise no Google Sheets
+> **Comando:**
+> *"Sou iniciante no Google Sheets. Tenho uma planilha com os seguintes dados: `[DESCREVA SUAS COLUNAS]`. Escreva a fórmula exata para calcular `[O QUE DESEJA CALCULAR]` e me explique brevemente como aplicá-la na célula."*
+
+#### ⚡ Prompt 4: Resumo Inteligente & Pontos de Ação no Gmail / Docs
+> **Comando:**
+> *"Analise o texto/reunião abaixo e extraia: 1. As 3 principais decisões tomadas; 2. Lista de tarefas pendentes com os respectivos responsáveis; 3. Principais prazos. Texto: `[COLE O TEXTO OU TRANSCRIÇÃO AQUI]`"*
+
+---
+
+### 3️⃣ VÍDEOS CINEMATOGRÁFICOS NO VEO 3.1
+
+#### 🎬 Prompt 5: Cena Comercial / Produto Hiper-Realista
+> **Comando (Cole no gerador de vídeo/Veo):**
+> *"Cinematic commercial shot of `[PRODUTO/OBJETO]` sitting on a sleek modern surface, dramatic studio softbox lighting, 8k resolution, photorealistic, subtle camera orbit movement, 60fps, shallow depth of field."*
+
+#### 🌆 Prompt 6: Cena de Ação / Paisagem Urbana Dinâmica
+> **Comando (Cole no gerador de vídeo/Veo):**
+> *"Drone aerial hyperlapse over a vibrant futuristic city at night, neon lights reflections on wet pavement, dynamic fast forward camera motion, ultra-detailed, cinematic color grading."*
+
+---
+
+💡 **Dica de Ouro:** Sempre forneça contexto à IA antes de pedir a resposta (ex: "Atue como um especialista em X", "Fale em tom descontraído", etc.).

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <rect width="64" height="64" rx="16" fill="url(#bg-grad)"/>
+  <path d="M32 10C32 22.1503 41.8497 32 54 32C41.8497 32 32 41.8497 32 54C32 41.8497 22.1503 32 10 32C22.1503 32 32 22.1503 32 10Z" fill="url(#star-grad)"/>
+  <defs>
+    <linearGradient id="bg-grad" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0b0f19"/>
+      <stop offset="1" stop-color="#171e2e"/>
+    </linearGradient>
+    <linearGradient id="star-grad" x1="10" y1="10" x2="54" y2="54" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1A73E8"/>
+      <stop offset="0.5" stop-color="#A259FF"/>
+      <stop offset="1" stop-color="#EA4335"/>
+    </linearGradient>
+  </defs>
+</svg>

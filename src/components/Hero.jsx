@@ -5,20 +5,44 @@ export default function Hero() {
   return (
     <section className="hero">
 
+      {/* ── Barra de Urgência no Topo ── */}
+      <div className="hero__urgency-bar">
+        <span className="hero__urgency-pulse" />
+        <span>🔥 <strong>Últimas licenças disponíveis</strong> — Esta página pode sair do ar a qualquer momento</span>
+      </div>
+
       <div className="c hero__body">
 
         <div className="hero__tag">
           <span className="hero__dot" />
-          Google AI Pro
+          Google AI Pro — Oferta Exclusiva
         </div>
 
         <h1 className="hero__h1">
-          GOOGLE AI PRO <span className="text-gradient">18 MESES</span> NO SEU E-MAIL
+          Acesse a <span className="text-gradient">IA Mais Poderosa</span> do Google por 18 Meses
         </h1>
 
         <p className="hero__sub">
-          Pare de pagar assinaturas isoladas. Tenha armazenamento em nuvem e acesso avançado ao Gemini em um só lugar.
+          Gemini Pro, 5TB de armazenamento, geração de vídeos e imagens com IA — tudo liberado no seu e-mail em minutos. Sem mensalidade, sem burocracia.
         </p>
+
+        {/* ── Ancoragem de Preço no Hero ── */}
+        <div className="hero__price-anchor">
+          <span className="hero__price-old">De R$ 197,00</span>
+          <span className="hero__price-arrow">→</span>
+          <span className="hero__price-new">Por apenas <strong>R$ 14,90</strong></span>
+          <span className="hero__price-badge">PAGAMENTO ÚNICO</span>
+        </div>
+
+        {/* ── CTA Principal → direto ao checkout ── */}
+        <button
+          className="btn btn-primary hero__cta"
+          id="hero-cta"
+          onClick={() => handleCheckout(CHECKOUT.main, 'hero-14-90')}
+        >
+          🔥 QUERO MEUS 18 MESES POR R$ 14,90
+        </button>
+        <p className="hero__micro">🔒 Pagamento seguro via PIX · Acesso imediato</p>
 
         {/* ────────────────────────────────────────────────
             SEÇÃO E MOLDURA DO VÍDEO
@@ -64,13 +88,6 @@ export default function Hero() {
           </div>
         </div>
 
-        <a
-          href="#pricing"
-          className="btn btn-primary hero__cta"
-          id="hero-cta"
-        >
-          🔥 QUERO GARANTIR MEU ACESSO
-        </a>
       </div>
     </section>
   )

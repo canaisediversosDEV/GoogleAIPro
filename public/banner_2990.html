@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Banner Google AI Pro 39,90</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+
+    body {
+      width: 1200px;
+      height: 675px;
+      background: #020713;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      margin: 0;
+    }
+
+    .banner {
+      width: 1200px;
+      height: 675px;
+      position: relative;
+      background: radial-gradient(circle at 100% 0%, #0d3880 0%, #071e4a 30%, #030c22 70%, #010613 100%);
+      overflow: hidden;
+      padding: 60px 70px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    /* Feixes de luz azul / Glow elegante */
+    .glow-top-right {
+      position: absolute;
+      top: -100px;
+      right: -100px;
+      width: 550px;
+      height: 550px;
+      background: radial-gradient(circle, rgba(37, 99, 235, 0.45) 0%, rgba(29, 78, 216, 0) 70%);
+      pointer-events: none;
+    }
+
+    .glow-bottom-left {
+      position: absolute;
+      bottom: -150px;
+      left: -150px;
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, rgba(30, 64, 175, 0.3) 0%, rgba(29, 78, 216, 0) 70%);
+      pointer-events: none;
+    }
+
+    .light-streak {
+      position: absolute;
+      width: 2px;
+      height: 800px;
+      background: linear-gradient(180deg, transparent, rgba(96, 165, 250, 0.4), transparent);
+      transform: rotate(-35deg);
+      top: -100px;
+      right: 180px;
+      pointer-events: none;
+      filter: blur(1px);
+    }
+
+    .light-streak-2 {
+      position: absolute;
+      width: 4px;
+      height: 800px;
+      background: linear-gradient(180deg, transparent, rgba(59, 130, 246, 0.3), transparent);
+      transform: rotate(-35deg);
+      top: -50px;
+      right: 40px;
+      pointer-events: none;
+      filter: blur(2px);
+    }
+
+    .main-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 40px;
+      height: 100%;
+      position: relative;
+      z-index: 2;
+    }
+
+    /* Coluna Esquerda */
+    .left-col {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .title {
+      font-size: 64px;
+      font-weight: 900;
+      color: #ffffff;
+      line-height: 1.05;
+      letter-spacing: -1.5px;
+    }
+
+    .subtitle {
+      font-size: 32px;
+      font-weight: 700;
+      color: #60a5fa;
+      margin-top: 8px;
+      margin-bottom: 22px;
+      letter-spacing: -0.5px;
+    }
+
+    .price-row {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 6px;
+    }
+
+    .old-price {
+      font-size: 26px;
+      color: #718096;
+      text-decoration: line-through;
+      font-weight: 700;
+    }
+
+    .badge-unique {
+      background: #2563eb;
+      color: #ffffff;
+      font-size: 14px;
+      font-weight: 700;
+      padding: 5px 16px;
+      border-radius: 999px;
+      letter-spacing: 0.2px;
+    }
+
+    .main-price {
+      font-size: 92px;
+      font-weight: 900;
+      color: #ffffff;
+      line-height: 1;
+      letter-spacing: -3px;
+      margin-bottom: 26px;
+    }
+
+    .cta-btn {
+      background: #22c55e;
+      color: #ffffff;
+      font-size: 20px;
+      font-weight: 800;
+      padding: 16px 36px;
+      border-radius: 10px;
+      border: none;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: fit-content;
+      letter-spacing: 0.5px;
+      box-shadow: 0 10px 25px -5px rgba(34, 197, 94, 0.4);
+    }
+
+    /* Coluna Direita */
+    .right-col {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-left: 20px;
+      border-left: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .benefits-list {
+      display: flex;
+      flex-direction: column;
+      gap: 22px;
+    }
+
+    .benefit-item {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+    }
+
+    .benefit-icon-box {
+      width: 44px;
+      height: 44px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #60a5fa;
+      flex-shrink: 0;
+    }
+
+    .benefit-text {
+      font-size: 22px;
+      font-weight: 600;
+      color: #ffffff;
+      letter-spacing: -0.3px;
+    }
+
+    /* Rodapé */
+    .footer-trust {
+      position: absolute;
+      bottom: 25px;
+      left: 0;
+      right: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      font-size: 13px;
+      color: #94a3b8;
+      font-weight: 600;
+      z-index: 2;
+    }
+
+    .footer-dot {
+      color: #3b82f6;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="banner" id="banner">
+    <div class="glow-top-right"></div>
+    <div class="glow-bottom-left"></div>
+    <div class="light-streak"></div>
+    <div class="light-streak-2"></div>
+
+    <div class="main-grid">
+      <!-- Coluna Esquerda -->
+      <div class="left-col">
+        <h1 class="title">Google AI Pro</h1>
+        <div class="subtitle">18 Meses de Acesso</div>
+
+        <div class="price-row">
+          <span class="old-price">R$ 197,00</span>
+          <span class="badge-unique">Pagamento Único</span>
+        </div>
+
+        <div class="main-price">R$ 39,90</div>
+
+        <div class="cta-btn">
+          GARANTIR ACESSO AGORA
+        </div>
+      </div>
+
+      <!-- Coluna Direita -->
+      <div class="right-col">
+        <div class="benefits-list">
+          
+          <div class="benefit-item">
+            <div class="benefit-icon-box">
+              <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/>
+              </svg>
+            </div>
+            <div class="benefit-text">5 TB de Armazenamento</div>
+          </div>
+
+          <div class="benefit-item">
+            <div class="benefit-icon-box">
+              <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 8V4H8"/>
+                <rect width="16" height="12" x="4" y="8" rx="2"/>
+                <path d="M2 14h2"/>
+                <path d="M20 14h2"/>
+                <path d="M15 13v2"/>
+                <path d="M9 13v2"/>
+              </svg>
+            </div>
+            <div class="benefit-text">Gemini 3.1 Pro</div>
+          </div>
+
+          <div class="benefit-item">
+            <div class="benefit-icon-box">
+              <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m22 8-6 4 6 4V8Z"/>
+                <rect width="14" height="12" x="2" y="6" rx="2"/>
+              </svg>
+            </div>
+            <div class="benefit-text">Veo 3.1 + Geração de Vídeos</div>
+          </div>
+
+          <div class="benefit-item">
+            <div class="benefit-icon-box">
+              <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M10 2v7.31"/>
+                <path d="M14 2v7.31"/>
+                <path d="M8.5 2h7"/>
+                <path d="M14 9.3a6.5 6.5 0 1 1-4 0"/>
+                <path d="M5.52 16h12.96"/>
+              </svg>
+            </div>
+            <div class="benefit-text">Google AI Studio</div>
+          </div>
+
+          <div class="benefit-item">
+            <div class="benefit-icon-box">
+              <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/>
+              </svg>
+            </div>
+            <div class="benefit-text">Gemini nos apps Google</div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Rodapé de Confiança -->
+    <div class="footer-trust">
+      <span>🔒 ⚡ 💳 Checkout Seguro</span>
+      <span class="footer-dot">⚡</span>
+      <span>Entrega Automática</span>
+      <span class="footer-dot">💳</span>
+      <span>Pagamento Único</span>
+    </div>
+
+  </div>
+
+</body>
+</html>

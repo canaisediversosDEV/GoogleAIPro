@@ -1,4 +1,5 @@
 import './Pricing.css'
+import { useState, useEffect } from 'react'
 import { CHECKOUT, handleCheckout } from '../utils/tracking'
 
 const benefitGroups = [
@@ -63,6 +64,71 @@ function Benefits() {
   )
 }
 
+/* ── Timer de Sessão ── */
+function SessionTimer() {
+  const [seconds, setSeconds] = useState(() => {
+    // Persistir o timer na sessão para não resetar no scroll
+    const saved = sessionStorage.getItem('offer_timer')
+    if (saved) {
+      const remaining = Math.max(0, Math.floor((parseInt(saved) - Date.now()) / 1000))
+      return remaining > 0 ? remaining : 0
+    }
+    // 15 minutos = 900 segundos
+    const expiry = Date.now() + 900 * 1000
+    sessionStorage.setItem('offer_timer', expiry.toString())
+    return 900
+  })
+
+  useEffect(() => {
+    if (seconds <= 0) return
+    const interval = setInterval(() => {
+      setSeconds(prev => {
+        if (prev <= 1) {
+          clearInterval(interval)
+          return 0
+        }
+        return prev - 1
+      })
+    }, 1000)
+    return () => clearInterval(interval)
+  }, [seconds])
+
+  const mins = Math.floor(seconds / 60).toString().padStart(2, '0')
+  const secs = (seconds % 60).toString().padStart(2, '0')
+
+  if (seconds <= 0) {
+    return (
+      <div className="price__timer price__timer--expired">
+        <span className="price__timer-icon">⏰</span>
+        <span>Tempo esgotado! A oferta pode encerrar a qualquer momento.</span>
+      </div>
+    )
+  }
+
+  return (
+    <div className="price__timer">
+      <span className="price__timer-icon">⏳</span>
+      <span>Oferta expira em: </span>
+      <span className="price__timer-digits">{mins}:{secs}</span>
+    </div>
+  )
+}
+
+/* ── Barra de Escassez ── */
+function StockBar() {
+  return (
+    <div className="price__stock-bar">
+      <div className="price__stock-info">
+        <span className="price__stock-label">⚠️ Licenças quase esgotadas</span>
+        <span className="price__stock-count">7 restantes</span>
+      </div>
+      <div className="price__progress-track">
+        <div className="price__progress-fill" />
+      </div>
+    </div>
+  )
+}
+
 export default function Pricing() {
   return (
     <section className="price" id="pricing">
@@ -76,7 +142,7 @@ export default function Pricing() {
           <div className="price__card price__card--hot" id="card-main">
             <span className="price__badge">🔥 ESGOTANDO — ÚLTIMAS UNIDADES</span>
 
-
+            <SessionTimer />
 
             <div className="price__period">
               <span>Google AI Pro — 18 Meses</span>
@@ -88,6 +154,8 @@ export default function Pricing() {
             </div>
             <p className="price__desc">Acesso completo por 18 meses. Pagamento único, sem renovação automática.</p>
 
+            <StockBar />
+
             <Benefits />
 
             <button
@@ -95,10 +163,10 @@ export default function Pricing() {
               id="price-btn-main"
               onClick={() => handleCheckout(CHECKOUT.main, '14-90')}
             >
-              GARANTIR ACESSO — R$ 14,90
+              QUERO MEUS 18 MESES — R$ 14,90
             </button>
             <p style={{ marginTop: '12px', fontSize: '13px', color: 'var(--text-muted)', textAlign: 'center' }}>
-              🔒 Pagamento 100% Seguro. Liberado exclusivamente via PIX para ativação imediata.
+              🔒 Pagamento 100% Seguro via PIX · Acesso Liberado em Minutos
             </p>
           </div>
 
@@ -139,5 +207,3 @@ export default function Pricing() {
     </section>
   )
 }
-
-
